@@ -90,6 +90,10 @@ namespace GithubHosts
                 label2.Text = "github.com 更新地址为 " + ip;
                 RunCmd("ipconfig /flushdns");
             }
+            else
+            {
+                label2.Text = "github.com 没有更新 当前为 " + old;
+            }
         }
 
         private void RunCmd(string command)
